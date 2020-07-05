@@ -1,4 +1,5 @@
 import React from 'react';
+import calculator from "./Calculator";          
 import './App.css';
 
 const CurrentDate = new Date().toLocaleDateString();
@@ -26,6 +27,7 @@ function App() {
   <p style = {cssStyle}>{greet}</p>
   <p>{CurrentDate}</p>
   <p>{CurrentTime}</p>
+  {calculator()}
     </div>
   );
 }
